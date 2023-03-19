@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious</title>
+
+
+<!-- Css link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Custom Css -->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar Starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Delicious</a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Menu" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="straw.html">Strawberry IceCream</a></li>
+                    <li><a class="dropdown-item" href="vanilla.html">Vanilla IceCream</a></li>
+                    <li><a class="dropdown-item" href="blue.html">Blueberry IceCream</a></li>
+                    <li><a class="dropdown-item" href="lemon.html">Lemon IceCream</a></li>
+                    <li><a class="dropdown-item" href="rasp.html">Raspberry IceCream</a></li>
+                    <li><a class="dropdown-item" href="plum.html">Plum IceCream</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar ends-->
+
+      <!-- Slide Starts-->
+
+      <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/id/1222009180/photo/ice-cream-scoops-in-cones-with-copy-space-on-blue.jpg?s=612x612&w=0&k=20&c=eLG4-vL6-pUF2EKN2Osq0D3_o-hHW6hSflVDLIBW3mY=" class="d-block w-100" alt=" ">
+            <div class="carousel-caption ">
+                    <h3>do you know how pleasure tastes?</h3>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhITExIVFRIWFxUWGBgVFxUYFxYXFREXFhUWFRUYHSggGBolGxUVITEiJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLSsrLSsrLS0tKy0rLS03LS0tLS0tKy0tLS0tNy03Lf/AABEIAKgBLAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQIDBAYF/8QANxAAAgEDAQUGBAQGAwEAAAAAAAECAxEhUQQSMUFhBRMigaGxMnGRwRRC0eEGI1Ky8PEzosIV/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQG/8QAHhEBAQEBAQEAAgMAAAAAAAAAAAERAiEDEzESIjL/2gAMAwEAAhEDEQA/APVgAzeuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAESZi6wMbgxjWNUwYkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhsCQRcOQHD2jtSgsuyPiT7Xf5Y46v7It2xJzq25Rt9X+1jGOzlLXRx85nrWl2v8A1Rt1Tv6H3dg2hSWHdM85PZzfseq4VFHlL3/19hKd/Pzx6gAF3OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGUVQmq7Rb6P2PP0O2YOVsrq1ZMi1MmvRnLtVazsb0pXSfQ81/EUt6o4tuyt4Vzdk7sVPM2vsx2ky2nbVFNydl/nDU8vToSjwlKPybXsI0bvxuT63b9yutfxu+jVUryfGTb/AENe8WoWyJJWd0TKhGKvK/RcyG08iO8WpnUkk4yvwaf0YhS1Iq7PdNLQJvsesTJOXYK+9CL1S9jpNHDUgi5IAAAAAAAAAAAACs3hgVnUsFVPh7Z2qoy3UnJ9OXzZWHaiXxXj1fDzfIrq/wDB6Ekx2apdGxZQAAAAACCTOtK0W9E/YDGdctTrnla/aFWTvGyWlrvzudGx9oS4yyueMr9Smtf4V6lMk46G03SN++LazxTb43p1FrCS/wCrPKT2O64ZPTbTtKSfyZ8qs3BWSu3zK9NvlPK+j2bWapQTeUrPywfO2qjepOfG7XlaKX2OKO2Tp3jZPLabvzz58S+zTmlvXvdttfNi1bjjOrWrggoI1i1LMcPQic1DrJ8tCGqElTzzfBBbs3fhLRmcY5u8sSp34cQYu0Xdoq8uPJFlU3bKbW97fMynRd7t30YF+ydsavCWHdtdU8+h9X8Qeb2ulm5WE6j/ADu3+cyZWPXz9emhtGTsTPE/iJp3g20tW3vfU9Xsm0qUItcGkyZWXXFjsABZQAAAAAAAAMNulanNriou3ztg3OXtKF6U1qgT9vLxjbEcy5sq6Tj1T4nbCCWEXjG5m7cdn8PVPDKN7pWt8nfHoz7B8fsanGM5qOiv9f3Z9gvP05O5/ahDZJht1TdhJ6fqSqzntBaFc81W2qpK+67PREbP2jUj8Xi9GU1r+OvVd6jh7U2j+XJaq31wvc+b/wDYjbhL0/U54V5VJXkkqaz/ALJ0549aUdlVrvCRltEN7EcRXqde0Rbtb4OnMokVdOa49m22UHuv14eWh2rtTluP0sZy2Xf/AFMnurw2bjwbDO8RntW2yqPdWFz/ANnXTqOOHmJWnsqirrKLhfnnEVNnUvFHKJhHgkRTg0/B9OR0SkndRa3wllOShhZm/QiFZPE8PkysaduPEnu97AMXlSYnUUMLM/Yd8oWjmVuPQhUl8Uc3+oGSp83lsmFRw6xLGllFXl5LUCypJq+d3j1OSa3+kfcu6s295Y0XQ1hNT6S0CGLpK1jOht7prdcW7N2zyZ1Rpv5anPWmr+GN1qEdSV6sAGjjAAABDZy1doBI6iTihtB0xqIjU40M6/wy+T9i2+jk27alGMnySb9ASPlqCeU/D7GU61/DDC5sj8RK90vCuXQ0UU1ePmtCjtd3YdK2+/kvf9j6pxdlQtTvq2/t9jtLz9OP6XeqHz+3L9zJLi3H+9H0Dl7Sjem/L+5Co5/1Hm4bNazTya90pq6xJcUaExpfmbsl6lHbjlhsnN4SLJX6RXqdLkqiw2muWpSwRisJuHWL5G6pp5T8JWEObxEp+Jf5V4Vy1CUVKu94Y4j7hRXA0UU1ePDTQoCKxbjmPDmjaKUsx81oRCFyk63KHDm9QJq1beGHHmzLutOOpvTqKeHifuFTd7AKNRy8MlnUmu3FJRXH8xSrV/LDzZSnUcMPMfYIIQsFFp3jx01NtxPMcr2IqVFHCzL2CWqaxeynbgc0oO95cfQp3d8t51NIV7YnlagCVRTy3ZLma92llvw8TnnNz6R5IDV7RGd4u6XJ/qR3TWLFHBNWIjUnHCygPUAA0cIAAMNtqqMG27JHkq/aM5u6uoer6tnoP4h/4kv6pRT9Zf8Ak+RSopFOq3+XOzWFOpOPihJtaNt+59HZu1Yvi916P7M5o0Hfw+a5Fa2z/FupOXsQveI+hV7UhHjNe7+iPnbTtTrWUfgvnV216HLDZM3fE6aFJwe8vNDUT5566CuYu8fNamrSa3o+a0JjFWvLC9w1fT7O2lOK8/fJ2qR5Sn2g4Tlj+W/qup9Sh2jCXCSfnn6cS0rl659fXc0cHadfwOzzi31RhW7QiuMl9c/Q+dPa9+SbxBZ6ydhacc+uqkt5JtWfuc9VuTyrJciJycs8EuBrTqb2HiXuVdTKUOaw0dNNbyTas/cpuqKvL6amE5Sk78NFoBao3J5VkuRJenU38PE16lWgRSzi7x+mpvBKausalYQ5vCM51pP4cJcOoCrU3vCsRXHqIqxpCan0lpqIU23YEU7ne/U0ltEX4bu1rbxnVqX8Mfh5vUruK1gLulu4JhC5OzJ5TzDV8hXu0t34ebQNUlVUcQXzZeDjLhiXNamcY2InC/RgxdqxZxSV5cNNS8Z2S37X5fuZVaTveWdNAK/iJ33uWnQ1jaSvHjoZle6bd44YF7GndpcWk/It3qTSbW9bjbCOeWyu+bt6g16cAGjhAABy9o004O/BWf2v6nyO5d+moBXp0fG+VnUrflh5syUGsxefcAq2bwanwxLmirIAIvCKh4m7dNSKsd+0k8LloAEMK1K5w1NlzdYZIITY6KOzXs2rP3L06LveStogCUSNy8oqNpS48kAE1WNRTxNWfLz5EyjbiQAKThf5nRS8SW8rPh8yQIVhWvJ2aslwQQABUd54w1zNZVVO8U2uuoARWe5bBaEObwgBiWVSo54WIL1EZOGVmPNAAbbqkrx+mglJQ6y5IAI1huXzLLZaFRww8x9gAlsqaeYvHsUqVreGHHmyABmqSJjOawnjy+4BBj//2Q==" class="d-block w-100" alt=" ">
+            <div class="carousel-caption">
+                <h3>do you know how pleasure tastes?</h3>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt=" ">
+            <div class="carousel-caption ">
+                <h3>do you know how pleasure tastes?</h3>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+      <!-- Slide ends-->
+
+
+<!-- Footer -->
+
+<section class="footer">
+
+  <div class="icons-container">
+
+      <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address</h3>
+          <p>9-219, Ayodhya Nagar, Quthbullapur, Hyderabad, Telangana 500055</p>
+      </div>
+
+      <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone</h3>
+          <p>+123-456-7890</p>
+          <p>+0987-456-123</p>
+      </div>
+
+      <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <a href="#" class="link">manisha@gmail.com</a>
+      </div>
+
+      <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>monday - friday: 2:00 -12:00 <br> saturday: 2:00 - 11:00 </p>
+      </div>
+
+  </div>
+
+  
+
+  <div class="credits">created by <span> Vuddamari Manisha</span> | all rights reserved</div>
+</section>
+<!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
